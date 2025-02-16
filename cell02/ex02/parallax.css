@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.parallax {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.parallax-1 {
+    background-image: url('https://www.womenintech.co.uk/wp-content/uploads/2022/09/Women-in-coding.png.webp');
+}
+
+
+.parallax-2 {
+    background-color: rgb(0, 0, 0);
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.parallax-3 {
+    background-image: url('https://hackbrightacademy.com/content/uploads/2020/06/13354400980-woman-programming-support-1030x687.jpeg');
+}

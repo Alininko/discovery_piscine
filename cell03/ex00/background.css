@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  height: 100vh;
+  margin: 50px;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+button {
+  height: 50px;
+  background-color: azure;
+}

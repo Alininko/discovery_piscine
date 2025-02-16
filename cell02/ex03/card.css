@@ -1,0 +1,54 @@
+table {
+    width: 400px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+    
+
+.row1 img {
+    width: 100%;
+    height: auto;
+}
+
+.row2 {
+    font-style: italic;
+}
+
+.row3 {
+    text-decoration: underline;
+    padding: 20px;
+}
+
+.row4 {
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(114, 111, 111);
+    font-weight: bold;
+    padding: 20px;
+}
+
+.row5 {
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 20px;
+}
+
+.row5 img {
+    width: 30px;
+    height: auto;
+}
+
+.row6 {
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+.row6 a {
+    color: white !important;
+    text-decoration: none;
+}
