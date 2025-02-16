@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dropbtn {
+  background-color: #e49b71;
+  color: white;
+  width: 300px;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+ }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1cfbb;
+  width: 300px;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown-content img {
+  width: 20px;
+  height: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Balloon</title>
+        <style>
+          body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+            .balloon {
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                border-radius: 50%;
+                background-color: red;
+            }
+        </style>
+</head>
+<body>
+    <div class="balloon" onclick="growBalloon(this)" onpointerover="shrinkBalloon(this)"></div>
+    <script>
+        function growBalloon(element) {
+            const colors = ['green', 'blue', 'red'];
+            let currentColor = element.style.backgroundColor;
+            let nextIndex = (colors.indexOf(currentColor) + 1) % colors.length;
+            element.style.backgroundColor = colors[nextIndex];
+            
+            let currentSize = parseInt(window.getComputedStyle(element).width);
+            if (currentSize < 420) {
+                element.style.width = (currentSize + 10) + 'px';
+                element.style.height = (currentSize + 10) + 'px';
+            } 
+            else {
+                element.style.width = '200px';
+                element.style.height = '200px';
+                element.style.backgroundColor = 'red';
+            }
+        }
+
+       function shrinkBalloon(element) {
+            const colors = ['red', 'blue', 'green'];
+            let currentColor = element.style.backgroundColor;
+            let nextIndex = (colors.indexOf(currentColor) + 1) % colors.length;
+            element.style.backgroundColor = colors[nextIndex];
+            
+            let currentSize = parseInt(window.getComputedStyle(element).width);
+            if (currentSize > 200) {
+            element.style.width = (currentSize - 5) + 'px';
+            element.style.height = (currentSize - 5) + 'px';
+            }
+        }
+    </script>
+</body>
+</html>
